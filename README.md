@@ -22,5 +22,5 @@ Hinweis: Keine Sharing-/Print-Funktion implementiert, alles lokal.
 
 Deployment (GitHub Pages):
 
-- Ein GitHub Actions Workflow (`.github/workflows/deploy-pages.yml`) ist hinzugefügt und veröffentlicht die Seite automatisch bei jedem Push auf `main`.
-- Die Seite wird unter `https://NoRo-lu.github.io/Gl-ckskeks` verfügbar sein, sobald der erste erfolgreiche Workflow durchgelaufen ist.
+- Ein GitHub Actions Workflow (`.github/workflows/deploy-pages.yml`) ist hinzugefügt und veröffentlicht die Seite automatisch bei jedem Push auf `main` (deployet auf die Branch `gh-pages`).
+- Die Seite sollte unter `https://NoRo-lu.github.io/Gl-ckskeks` verfügbar sein; es kann ein paar Minuten dauern, bis GitHub Pages vollständig aktiviert ist.
