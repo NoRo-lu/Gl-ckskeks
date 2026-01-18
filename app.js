@@ -22,19 +22,8 @@ function showSpruch(text){
   setTimeout(()=>k.classList.remove('open'),600)
 }
 
-function populateList(){
-  const ul = document.getElementById('spruch-list')
-  ul.innerHTML = ''
-  sprueche.forEach(s=>{
-    const li = document.createElement('li')
-    li.textContent = s
-    ul.appendChild(li)
-  })
-}
-
 window.addEventListener('DOMContentLoaded', async ()=>{
   await loadSprueche()
-  populateList()
 
   document.getElementById('open-btn').addEventListener('click', ()=>{
     showSpruch(randomSpruch())
@@ -42,10 +31,5 @@ window.addEventListener('DOMContentLoaded', async ()=>{
 
   document.getElementById('new-btn').addEventListener('click', ()=>{
     showSpruch(randomSpruch())
-  })
-
-  document.getElementById('list-btn').addEventListener('click', ()=>{
-    const sec = document.getElementById('alle')
-    sec.classList.toggle('hidden')
   })
 })
